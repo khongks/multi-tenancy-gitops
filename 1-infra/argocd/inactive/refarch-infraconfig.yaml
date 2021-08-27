@@ -13,8 +13,8 @@ spec:
   project: infra
   source:
     path: 1-infra/infraconfig
-    repoURL: github.com/cloud-native-toolkit/multi-tenancy-gitops.git
-    targetRevision: master
+    repoURL: github.com/khongks/multi-tenancy-gitops.git
+    targetRevision: demo-mq-v2-khongks
   syncPolicy:
     automated:
       prune: true

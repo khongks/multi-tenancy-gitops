@@ -5,7 +5,7 @@ set -eo pipefail
 SCRIPTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 [[ -n "${DEBUG:-}" ]] && set -x
 
-GIT_USER=${GIT_USER}
+GIT_USER=$1
 if [ -z ${GIT_USER} ]; then echo "Please set GIT_USER when running script, optional GIT_BASEURL and GIT_REPO to formed the git url GIT_BASEURL/GIT_USER/GIT_REPO"; exit 1; fi
 CLUSTER_DOMAIN=${CLUSTER_DOMAIN}
 if [ -z ${CLUSTER_DOMAIN} ]; then echo "CLUSTER_DOMAIN has not been set for the Certificate resources."; fi
