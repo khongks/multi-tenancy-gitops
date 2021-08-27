@@ -3,6 +3,7 @@ kind: ConsoleNotification
 metadata:
   name: banner-env
 spec:
-  backgroundColor: teal
+spec:
+  backgroundColor: red
   location: BannerTop
-  text: Cluster description
+  text: MQ Production reference guide
